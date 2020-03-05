@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #f8f8f8; */
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+main {
+  background-color: #fff;
+}
+
+          /* Header */
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-items a {
+  background-color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  padding: 0.75em;
+}
+
+.nav-items a:hover {
+  background-color: #fed36e;
+  border-radius: 7%;
+  font-size: 1.3em;
+  color: #666;
+}
+
+.main-title {
+  align-self: center;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-items {
+  width: 95%;
+  margin-bottom: 0.3em;
+  font-size: 1em;
+}
+
+.showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-bottom: 4em; */
+}
+
+.showcase-image {
+  margin-top: 3em;
+  width: 90%;
+  
+  
+}
+
+.showcase-text {
+  text-align: center;
+  padding: 1em;
+  font-size: 1em;
+  color: #666;
+  line-height: 1.5;
+}
+
+.p-text {
+  text-align: center;
+  padding: 1em;
+  font-size: 1em;
+  color: #666;
+  line-height: 1.5;
+}
+
+.contact-text {
+  text-align: center;
+  padding: 1em;
+  font-size: 1em;
+  color: #666;
+  line-height: 1.5;
+}
+
+
+          /* Portfolio */
+
+.topic {
+  text-align: center;
+  padding-top: 3em;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.project {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-img {
+  width: 100%;
+  margin-top: 2.5em;
+}
+
+.project-title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.2em;
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
+          /* Contact */
+
+footer {
+  background-color: #f8f8f8;
+}
+
+.contacts {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+          /* Footer */
+
+hr {
+  width: 90%;
+  margin-top: 5em;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav p {
+  margin: 1em 1.5em;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.foot-nav {
+  display: none;
+}
+
+      /* Media Queries */
+
+@media(min-width: 768px) {
+  .main-nav ul {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+
+  .nav-items {
+    width: 120px;
+    margin: 0 1em;
+  }
+
+  .nav-items a {
+    background-color: #f8f8f8;
+    margin: 0;
+    width: 100%;
+  }
+
+  .nav-items a:hover {
+    font-size: 1em;
+  }
+
+  .showcase {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    padding-bottom: 4em;
+  }
+
+  .showcase-image {
+    margin-right: 1.5em;
+    margin-top: 2em;
+    width: 40%;
+  }
+
+  .showcase-text {
+    text-align: left;
+    margin-left: 1em;
+    font-size: 1.2em;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .project {
+    width: 50%;
+  }
+
+  main {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .project-img {
+    width: 97%;
+    margin: 2em auto 0 auto;
+  }
+
+  .contact-text {
+    margin: 1em 10em;
+  }
+
+  .small {
+    display: none;
+  }
+
+  .footer-nav {
+    padding-bottom: 3em;
+    /* font-size: 0.7em; */
+  }
+
+  .foot-nav {
+    display: flex;
+    padding: 0;
+    margin: 1em 1.5em;
+    list-style: none;
+  }
+
+  .foot-nav a {
+    margin: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3em;
+    margin-left: 1em;
+  }
+
+  .nav-items {
+    padding-right: 1.5em;
+    margin: 0;
+  }
+
+  .showcase-image {
+    width: 100%;
+  }
+
+  .showcase-text {
+    margin-left: 1em;
+    padding-left: 0;
+    font-size: 1.4em;
+  }
+
+  .project {
+    width: calc(100% / 3);
+  }
+}
